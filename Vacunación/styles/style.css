@@ -1,0 +1,616 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Menú*/
+.Encabezado{
+    background: linear-gradient(120deg, #ffffff 45.20%, #bdd4e7 40%, #1c99fe 67%); /*color degradado*/
+    
+    color: blue;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    height: 120px;
+
+    /*left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	/*top: 0; /* Posicionamos la cabecera pegada arriba */
+	/*position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+	
+}
+.Vacunacion h1{
+    float: left; /*a la palabra la ubica a la izquierda*/
+    margin: 40px; 
+    margin-left: 60px; /*crea una sangria a la palabra*/
+    /*padding-top: 30px;*/
+}
+
+.Menu ul{
+    list-style: none; /*quita los puntitos de las palabras*/
+    float: right; /*al menú lo ubica a la derecha*/
+}
+.Menu ul li{ 
+    float: left; /*al menu lo ubica en una sola linea*/
+    padding: 20px; /*crea espacio entre las palabras*/
+    padding-top: 40px;
+}
+.Menu ul li a{
+    color: rgb(108, 113, 153);
+    text-decoration: none; /*quita el subrayado a las palabras*/
+    font-size: 20px;
+}
+
+/*Enfermera*/
+.Contenedor{
+    width: 100%;
+    height: 900px;
+    /*position: absolute;*/
+}
+.ContenedorIzqDer{
+    width: 100%;
+    height: auto;
+    /*background: rebeccapurple;*/
+}
+.Derecha{
+    width: 50%;
+    height: auto;
+    background: blue;
+    /*position: absolute;*/
+    /*top: 300px;; /*ubica las figuras an la posicion indicada*/
+    /*right: 0 auto; /*ubica las figuras an la posicion indicada*/
+    /*transform: translate(-50%,-50%); /*hace que las figuras se pongan encima una de otra*/
+    float: right;
+    /*flex-wrap: wrap;*/
+}
+
+/*-.RectanguloAzul{
+    background: blue;
+    height: 800px; /*altura del rectangulo*/
+    /*width:40%; /*ancho del rectangulo*/
+/*}*/
+.Enfermera img{
+    /*padding: 120px;
+    margin-left: 580px;*/
+    height: 900px;
+    width: 650px;
+    float: right;
+}
+
+.Izquierda{
+    /*position: absolute;*/
+    width: 50%;
+    height: 900px;
+    /*top: 210px;*/
+    /*margin-left: 60px;*/
+    float: left;
+}
+
+.Izquierda h1{
+    font-size: 75px;
+    width: 550px;
+    color: rgb(23, 28, 107);
+    margin-left: 60px;
+}
+.Izquierda p{
+    font-size: 30px;
+    width: 550px;
+    color: rgb(108, 113, 153);
+    margin-left: 60px;
+}
+
+.Mensaje ul{
+    list-style: none; /*quita los puntitos de las palabras*/
+    /*float: left; /*al menú lo ubica a la izquierda*/
+    
+}
+.Mensaje ul li{ 
+    float: left; /*al menu lo ubica en una sola linea*/
+    padding: 20px; /*crea espacio entre las palabras*/
+    padding-top: 30px; /*espacio enntre el parrafo de arriba*/
+}
+.Mensaje ul li a{
+    color: rgb(108, 113, 153);
+    text-decoration: none; /*quita el subrayado a las palabras*/
+}
+.Iconos{
+    width: 25px; /*tamaño del icono*/
+    margin-right: 10px; /*margen entre el icono y la palabra*/
+    /*padding-top: 1px ; /*dejar una margen arriba del logo*/
+    cursor: pointer; /*hace que el cursor cambie de la flecha a la manita*/
+}
+
+.MensajeAgenda ul{
+    list-style: none; /*quita los puntitos de las palabras*/
+    /*float: left; /*al menú lo ubica a la izquierda*/
+    font-size: 30px;
+}
+.MensajeAgenda ul li{ 
+    float: left; /*al menu lo ubica en una sola linea*/
+    padding: 20px; /*crea espacio entre las palabras*/
+    padding-top: 130px; /*espacio enntre el parrafo de arriba*/
+}
+.MensajeAgenda ul li a{
+    color: rgb(108, 113, 153);
+    text-decoration: none; /*quita el subrayado a las palabras*/
+}
+
+
+/*Agenda*/
+.SliderAgendar{
+    position: absolute;
+    background: #ecf0f5;
+    height: 25%; /*alto del rectangulo*/
+    width: 75%; /*ancho del rectangulo*/
+    margin-left: 60px; /*sangria del rectangulo*/
+    top: 830px; /*posicion del rectangulo de arriba hacia abajo*/
+    opacity: 0.9;
+    border-radius: 3%;
+}
+.Opciones ul{
+    /*margin-left: 200px; /*mueve las palabras a la posicion especificada*/
+    /*font-size: 30px;*/
+    float: left; /*coloca en la misma linea al texto*/
+    padding-top: 20px; /*espacio enntre el parrafo de arriba*/
+}
+.Opciones ul label{ 
+    padding: 30px; /*crea espacio entre las palabras*/
+    color: rgb(54, 53, 53);
+    font-size: 25px;
+    padding-top: 0px; /*espacio enntre el parrafo de arriba*/
+}
+.Boton input{
+    position: absolute; /*para poder mover el boton con top*/
+    background: blue;
+    padding: 15px 31px; /*tamaño del boton*/
+    border-radius: 10%;
+    top: 50px;
+    color: #ffffff;
+    font-size: 20px;
+} 
+
+
+
+/*Marcas*/
+.ContenedorMarcas{ /*tamaño del contenedor*/
+    width: 100%;
+    height: 20%;
+    /*background: #000000;*/
+    margin-top: 50px;
+}
+.Marcas{
+    text-align: center;
+}
+.Marcas img{
+    width: 200px; /*tamaño de las imagenes*/
+    padding: 40px; /* espacio entre imagenes*/
+    /*margin: 50px; /*espacio entre imagenes*/
+}
+
+
+/*Figuras: cuadrado y linea*/
+.ContenedorLetFig{
+    width: 100%;
+    height: 250px;
+}
+
+.Figuras{
+    /*display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;*/
+    /*display: flex;*/
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 205px;
+    float: right;
+    
+    /*transform: translateX(500px);*/
+}
+.Cuadrado1{
+    /*width: 100px;
+    height: 100px;
+    background: #000000;
+    /*border-top-left-radius: 20%;*/
+    /*border: 100% 0 0 0;
+    /*float: right;*/
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #e2eaf0;
+    border-bottom: 50px solid #e2eaf0;
+    margin-left: auto;
+    
+}
+.Rectangulo{
+    width: 100%;
+    height: 5px;
+    background: #f8f6f6;
+    /*float: right;*/
+    margin-left: auto;
+}
+.Cuadrado2{
+    /*width: 100px;
+    height: 100px;
+    background: #a7c7e0;
+    /*float: right;*/
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid #e2eaf0;
+    border-top: 50px solid #e2eaf0;
+    margin-left: auto;
+    
+}
+.Pregunta{
+    /*position: absolute;*/
+    width: 50%;
+    height: 500px;
+}
+.Pregunta h1{
+    margin-left: 60px;
+    font-size: 50px;
+    color: rgb(23, 28, 107);
+}
+.Pregunta p{
+    margin-left: 60px;
+    font-size: 30px;
+    color: rgb(108, 113, 153);
+}
+
+
+/*Beneficios*/
+.ContenedorBen{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+.Beneficios{
+    display: flex; /*ubicar los rectángutos en linea*/   
+    justify-content: left; /*ubicar los rectangulos hotizontalmente*/
+    /*align-items: center; /*alinear los rectangulos verticalmente*/
+    margin-left: 60px;
+       
+}
+.IconosGrandes{
+    width: 40px; /*tamaño del icono*/
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.Beneficios h1{
+    /*margin-left: 60px;*/
+    font-size: 33px;
+    color: rgb(23, 28, 107);
+    margin-left: 20px;
+}
+.Beneficios p{
+    /*margin-left: 60px;*/
+    font-size: 20px;
+    color: rgb(108, 113, 153);
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.Rectangulo1{
+    width: 23%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 5%; /*redondear las esquinas*/
+    margin-top: 20px; /*margen superior entre el rectángulo y contenedor*/
+    border: 3px solid #e2eaf0; /*color del borde*/
+}
+.Rectangulo2{
+    width: 23%;
+    height: auto;
+    background: #ffffff;
+    margin-left: 20px;
+    border-radius: 5%;
+    margin-top: 20px;
+    box-shadow: -5px 10px 10px 10px rgb(217, 231, 236); /*sombreado por fuera*/
+    /*box-shadow: inset 15px 15px 20px skyblue; /*sombreado por dentro*/
+}
+.Rectangulo3{
+    width: 23%;
+    height: auto;
+    background: #ffffff;
+    margin-left: 20px;
+    border-radius: 5%;
+    margin-top: 20px;
+    border: 3px solid #e2eaf0;
+}
+.Rectangulo4{
+    width: 23%;
+    height: auto;
+    background: #ffffff;
+    margin-left: 20px;
+    border-radius: 5%;
+    margin-top: 20px;
+    border: 3px solid #e2eaf0;
+}
+
+
+
+/*Figuras: cuadrado y linea 2*/
+.ContenedorMensajeFigura{
+    /*position: absolute;*/
+    width: 100%;
+    height: 250px;   
+}
+
+.FigurasMensaje{
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 205px;
+    float: left;
+    
+    /*transform: translateX(500px);*/
+}
+.Triangulo1{
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 50px solid #e2eaf0;
+    border-bottom: 50px solid #e2eaf0;
+    margin-left: 0 auto;
+    
+}
+.Rectangulo1_1{
+    width: 100%;
+    height: 5px;
+    background: #f8f6f6;
+    margin-left: auto;
+}
+.Triangulo2{
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #e2eaf0;
+    border-top: 50px solid #e2eaf0;
+    margin-left: 0 auto;
+    
+}
+.Preparativos{
+    /*position: absolute;*/
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+.Preparativos h1{
+    margin-left: 60px;
+    font-size: 50px;
+    color: rgb(23, 28, 107);
+    margin-right: 60px;
+}
+.Preparativos p{
+    margin-left: 60px;
+    font-size: 30px;
+    color: rgb(108, 113, 153);
+    margin-right: 60px;
+}
+.Persona img{
+    width: 650px;
+    height: 754px;
+}
+
+
+/*Persona*/
+.ContenedorPersona{
+    width: 100%;
+    height: 800px;
+    
+}
+.CuadroAzul{
+    width: 50%;
+    height: 560px;
+    background: blue;
+    margin-top: 160px;
+    float: left;
+}
+.ContenedorOpciones{
+    width: 50%;
+    height: auto;
+    
+    float: right;
+}
+.IconosOpciones{
+    width: 30px; /*tamaño del icono*/
+    /*margin-right: 10px; /*margen entre el icono y la palabra*/
+    cursor: pointer; /*hace que el cursor cambie de la flecha a la manita*/
+}
+.RectanguloOpciones img{
+    /*align-items: center; /*alinear los rectangulos verticalmente*/
+    /*position: relative;*/
+    margin-right: 20px;
+    margin-left: 0 auto;
+}
+.RectanguloOpciones{
+    width: 80%;
+    height: auto;
+    border: 3px solid #e2eaf0; /*color del borde*/
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: -5px 10px 10px 10px rgb(217, 231, 236); /*sombreado por fuera*/
+}
+.RectanguloOpciones ul{
+    /*margin-left: 200px; /*mueve las palabras a la posicion especificada*/
+    /*font-size: 30px;*/
+    /*float: left; /*coloca en la misma linea al texto*/
+    padding-top: 10px; /*espacio enntre el parrafo de arriba*/
+}
+.RectanguloOpciones ul label{
+    font-size: 20px;
+    color: rgb(23, 28, 107);
+    
+    /*margin-left: 10px;*/
+}
+.RectanguloOpciones p{
+    font-size: 20px;
+    color: rgb(108, 113, 153);
+    margin-left: 45px;
+}
+
+
+
+/*Enfermero*/
+.ContenedorEnfermero{
+    width: 100%;
+    height: 800px;
+    /*margin-left: 40px;*/
+}
+.CuadroAzulDer{
+    width: 50%;
+    height: 590px;
+    background: blue;
+    /*margin-top: 150px;*/
+    float: right;
+}
+.ContenedorOpcionesIzq{
+    width: 50%;
+    height: auto;
+    /*float: left;*/
+    margin-top: 120px;
+    margin-left: 30px;
+}
+.IconosOpcionesIzq{
+    width: 50px; /*tamaño del icono*/
+    position: absolute; /*poder mover las imagenes de los iconos*/
+    padding-top: 10px;
+    /*margin-right: 10px; /*margen entre el icono y la palabra*/
+    cursor: pointer; /*hace que el cursor cambie de la flecha a la manita*/
+}
+.RectanguloOpcionesIzq img{
+    /*align-items: center; /*alinear los rectangulos verticalmente*/
+    /*position: relative;*/
+    margin-right: 10px;
+    margin-left: 0 auto;
+}
+.RectanguloOpcionesIzq{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border: 3px solid #e2eaf0; /*color del borde*/
+    border-radius: 5%;
+    /*margin: auto;*/
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: -5px 10px 10px 10px rgb(217, 231, 236); /*sombreado por fuera*/
+}
+.RectanguloOpcionesIzq ul{
+    /*margin-left: 200px; /*mueve las palabras a la posicion especificada*/
+    /*font-size: 30px;*/
+    /*float: left; /*coloca en la misma linea al texto*/
+    padding-top: 10px; /*espacio enntre el parrafo de arriba*/
+}
+.RectanguloOpcionesIzq ul label{
+    font-size: 33px;
+    color: rgb(23, 28, 107);
+    
+    margin-left: 60px;
+}
+.RectanguloOpcionesIzq ul p{
+    font-size: 20px;
+    color: rgb(108, 113, 153);
+    margin-left: 60px;
+}
+.RectanguloOpcionesIzq input{
+    width: 200px;
+    height: 70px;
+    background: #e2eaf0;
+    color: blue;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5%;
+    /*position: relative;*/
+    /*justify-content: center;*/
+    border: none;
+}
+
+/*Pie de página*/
+.ContenedorPie{
+    width: 100%;
+    height: 400px;
+    background: #e2eaf0;
+}
+.ContenedorVacIzq{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.ContenedorVacIzq h1{
+    font-size: 30px;
+    color: blue;
+    margin-left: 60px;
+}
+.ContenedorVacIzq p{
+    font-size: 20px;
+    color: rgb(108, 113, 153);
+    margin-left: 60px;
+    margin-right: 400px;
+    line-height: 40px; /*cambiar espacio entre líneas del párrafo*/
+    padding-bottom: 23px;
+}
+.ContenedorAboDer{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.ContenedorAboDer3{
+    width: 30%;
+    height: auto;
+    float: left;
+}
+.ContenedorAboDer3 h3{
+    font-size: 25px;
+    color: rgb(23, 28, 107);
+    margin-left: 40px;
+}
+.ContenedorAboDer3 ul{
+    list-style: none; /*quita los puntitos de las palabras*/
+}
+.ContenedorAboDer3 li{
+    font-size: 20px;
+    color: rgb(108, 113, 153);
+    margin-bottom: 30px;
+}
+
+.ContenedorFinal{
+    
+    width: 100%;
+    height:200px;
+    
+}
+.ContenedorFinalIzq{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.ContenedorFinalIzq p{
+    color: rgb(108, 113, 153);
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 115px;
+    margin-bottom: 20px;
+}
+.ContenedorFinalDer{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.ContenedorFinalDer ul{
+    list-style: none;
+}
+.ContenedorFinalDer li{
+    float: right;
+    color: rgb(108, 113, 153);
+    font-size: 18px;
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
